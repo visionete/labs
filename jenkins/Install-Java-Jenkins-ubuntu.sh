@@ -3,7 +3,7 @@
 # Install JAVA
 add-apt-repository -y ppa:openjdk-r/ppa
 apt-get update
-apt-get install -y openjdk-11-jdk
+apt-get install -y openjdk-8-jdk
 
 # Install Jenkins
 wget -qO - https://pkg.jenkins.io/debian-stable/jenkins.io.key | apt-key add -
@@ -19,6 +19,6 @@ tar xzf apache-maven-3.6.3-bin.tar.gz -C /opt
 # Set JAVA_HOME & MAVEN_HOME as environment variables on Jenkins machine
 cd /etc
 echo 'MAVEN_HOME="/opt/apache-maven-3.6.3"' >> profile
-echo 'JAVA_HOME="/usr/lib/jvm/java-1.11.0-openjdk-amd64"' >> profile
+echo 'JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"' >> profile
 echo 'PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH' >> profile
 . profile  # Of course, this won't take effect in the parent shell...
