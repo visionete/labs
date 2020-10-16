@@ -1,7 +1,7 @@
 #!/usr/bin/sh -e
 
 # Install JAVA
-add-apt-repository ppa:openjdk-r/ppa
+add-apt-repository -y ppa:openjdk-r/ppa
 apt-get update
 apt-get install -y openjdk-11-jdk
 
