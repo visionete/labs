@@ -19,6 +19,6 @@ tar xzf apache-maven-3.6.3-bin.tar.gz -C /opt
 # Set JAVA_HOME & MAVEN_HOME as environment variables on Jenkins machine
 cd /etc
 echo 'MAVEN_HOME="/opt/apache-maven-3.6.3"' >> profile
-echo 'JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' >> profile
+echo 'JAVA_HOME="/usr/lib/jvm/java-1.11.0-openjdk-amd64"' >> profile
 echo 'PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH' >> profile
 . profile  # Of course, this won't take effect in the parent shell...
