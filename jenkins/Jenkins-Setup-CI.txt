@@ -32,7 +32,7 @@ job1-compile	    compile                    : compile              : NA
 
 job2-codereview	 :  codereview                 : -P metrics pmd:pmd   : **/pmd.xml ( publish pmd analysis results )
 
-job3-unittest    :	unit test                  : test                 : target/surefire-reports/*.xml
+job3-unittest    :	unit test                  : test                 : target/surefire-reports/*.xml (JUnit test result)
 
 job4-metriccheck :	metric check               : cobertura:cobertura -Dcobertura.report.format=xml  : target/site/cobertura/coverage.xml ( publish cobertura coverage report )
 
