@@ -21,4 +21,4 @@ cd /etc
 echo 'MAVEN_HOME="/opt/apache-maven-3.6.3"' >> profile
 echo 'JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' >> profile
 echo 'PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH' >> profile
-. profile
+. profile  # Of course, this won't take effect in the parent shell...
